@@ -79,7 +79,7 @@
             var z = bin[3] == '1';
             //"compute" the value of logical expression for each sgement
             //1100,1101,1110,1111 treated as 1/true
-            var a = w || !w&!x&!z || zx || zy
+            var a = w || !w&!x&!z || z&x || z&y || !w&!z&x&y
             var b = w || !w&!x || y&z || !y&!z
             var c = w || !y || !x&y&z ||x&y&!z
             var d = !x&!y&!z || x&!y&z || y
